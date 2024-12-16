@@ -1,0 +1,15 @@
+{% extends 'global/base.html' %}
+{% load static %}
+{% block style %}
+  <link rel="stylesheet" href=" {% static 'css/game.css' %}" />
+{% endblock %}
+{% block title %}
+  Game
+{% endblock %}
+{% block content %}
+  <h2 id="score">0</h2>
+  <div id="canvasContainer">
+    <canvas id="gameArea"></canvas>
+  </div>
+  <script src="{% static 'js/game.js' %}"></script>
+{% endblock %}
